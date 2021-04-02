@@ -5,7 +5,19 @@
           box-sizing: border-box;
 }
 
-h1 {
-  color: red;
+body {
+  width: 100vw;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  font-size: 14px;
+  color: white;
+  letter-spacing: 1px;
+  line-height: .4rem;
 }
 /*# sourceMappingURL=main.css.map */
