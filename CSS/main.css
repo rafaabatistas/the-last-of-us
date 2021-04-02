@@ -90,20 +90,23 @@ header {
   z-index: -99999 !important;
 }
 
-/*! Primeiro Container */
+/*! Primeiro Container Banner*/
 
 .container {
   height: 100%;
   max-width: 1440px;
-  padding: 36px 18px;
+  padding-left: 18px;
   display: flex;
   align-items: center;
   overflow: hidden;
 }
 
+/*! Parte Descritiva*/
+
 .container-item-1 {
   max-width: 580px;
   display: flex;
+  padding-top: 36px;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
@@ -196,7 +199,6 @@ header {
   display: flex;
   align-self: flex-end;
   justify-self: center;
-  z-index: 999;
   cursor: pointer;
   animation: click-mouse 1.6s ease-in infinite;
 }
@@ -215,4 +217,30 @@ header {
     opacity: 0;
     margin-bottom: 30px;
   }
+}
+
+/*! Segundo Container Banner*/
+
+.no-destaque {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 789px;
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container-item-2 {
+  overflow: hidden;
+  height: 100%;
+  padding-top: 30px;
+  padding-right: 50px;
+}
+
+.ellie-image {
+  height: 840px;
+  background-size: cover;
+  background-position: center;
 }
