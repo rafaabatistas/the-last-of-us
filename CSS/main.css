@@ -87,7 +87,7 @@ header {
   background-position: center;
   display: flex;
   justify-content: center;
-  z-index: -1;
+  z-index: -99999 !important;
 }
 
 /*! Primeiro Container */
@@ -186,4 +186,33 @@ header {
 
 .logo-estudio {
   width: 217px;
+}
+
+/*! Mouse */
+
+.mouse {
+  width: 60px;
+  height: 42px;
+  display: flex;
+  align-self: flex-end;
+  justify-self: center;
+  z-index: 999;
+  cursor: pointer;
+  animation: click-mouse 1.6s ease-in infinite;
+}
+
+#mouse {
+  fill: white;
+}
+
+/*! Animação do Mouse */
+
+@keyframes click-mouse {
+  to {
+    opacity: 1;
+    margin-bottom: 0px;
+  } from {
+    opacity: 0;
+    margin-bottom: 30px;
+  }
 }
