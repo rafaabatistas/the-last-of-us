@@ -67,11 +67,106 @@ header {
   padding: 8px 16px;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 300;
+  cursor: pointer;
+  transition: all .5s ease-in;
+}
+
+.nav-link:hover {
+  text-shadow: 0px 0px 3px blanchedalmond;
+  transform: scale(1.08);
 }
 
 .ellie {
   color: #584D30;
   font-weight: 700;
+  transition: all .5s ease-in;
+}
+
+.ellie:hover {
+  color: white;
+  text-shadow: 0px 0px 3px blanchedalmond;
+  transform: scale(1.08);
+}
+
+/*! Mídias Sociais */
+
+.nav-social {
+  display: flex;
+}
+
+.icon {
+  height: 40px;
+  width: 40px;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.midia-social {
+  transition: all .4s;
+}
+
+.midia-social:hover {
+  transform: scale(1.2);
+}
+
+.link {
+  text-decoration: none !important;
+  color: white;
+}
+
+/*? Facebbok */
+
+.facebook {
+  fill: #959698;
+  cursor: pointer;
+  transition: all .2s ease-in;
+}
+
+.facebook:hover {
+  fill: #ffffff;
+  text-shadow: 1px 1px 5px white;
+}
+
+/*? Instagram */
+
+.instagram {
+  fill: #959698;
+  cursor: pointer;
+  transition: all .2s ease-in;
+}
+
+.instagram:hover {
+  fill: #ffffff;
+  text-shadow: 1px 1px 5px white;
+}
+
+/*? Twitter */
+
+.twitter {
+  fill: #959698;
+  cursor: pointer;
+  transition: all .2s ease-in;
+}
+
+.twitter:hover {
+  fill: #ffffff;
+  text-shadow: 1px 1px 5px white;
+}
+
+/*? YouTube */
+
+.youtube {
+  fill: #959698;
+  cursor: pointer;
+  transition: all .2s ease-in;
+}
+
+.youtube:hover {
+  fill: #ffffff;
+  text-shadow: 1px 1px 5px white;
 }
 
 /*! Background */
@@ -201,6 +296,7 @@ header {
   align-self: flex-end;
   justify-self: center;
   cursor: pointer;
+  z-index: 99999999999999 !important;
   animation: click-mouse 1.6s ease-in infinite;
 }
 
@@ -231,18 +327,20 @@ header {
   position: absolute;
   display: flex;
   justify-content: flex-end;
-  z-index: -1;
-}
+  z-index: -999 !important;
+} 
 
 .container-item-2 {
   overflow: hidden;
   height: 100%;
   padding-top: 30px;
   padding-right: 50px;
+  z-index: -999 !important;
 }
 
 .ellie-image {
   height: 111%;
   background-size: cover;
   background-position: center;
+  z-index: -999 !important;
 }
