@@ -35,7 +35,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 50px;
+  margin: 0 40px;
 }
 
 .nav-menu {
@@ -191,7 +191,7 @@ header {
 .container {
   height: 100%;
   max-width: 1440px;
-  padding-left: 18px;
+  padding-left: 40px;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -219,7 +219,7 @@ header {
 }
 
 .mini-descricao {
-  height: 155px;
+  height: auto;
   font-size: 15px;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 300;
@@ -244,7 +244,9 @@ header {
   height: 43px;
   width: 186px;
   margin-right: 16px;
+
   background-color: #584D30;
+  outline: none;
 
   cursor: pointer;
   border-radius: 4px;
@@ -260,9 +262,76 @@ header {
   transition: all .8s ease-in-out;
 }
 
+.primary {
+  position: relative;
+}
+
+.primary::after {
+  content: '';
+  width: 35px;
+  height: 30px;
+  position: absolute;
+
+  top: -2px;
+  left: -2px;
+  background-color: transparent;
+  opacity: 0;
+
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+  border-radius: 4px;
+
+  transition: all .8s ease-in-out;
+}
+
+.primary:hover::after {
+  opacity: 1;
+}
+
+.primary::before {
+  content: '';
+  width: 35px;
+  height: 30px;
+  position: absolute;
+
+  bottom: -2px;
+  right: -2px;
+  background-color: transparent;
+  opacity: 0;
+
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+  border-radius: 4px;
+
+  transition: all .8s ease-in-out;
+}
+
+.primary:hover::before {
+  opacity: 1;
+}
+
 .color {
   background-color: transparent;
   border: 3px solid #584D30;
+  overflow: hidden;
+  position: relative;
+}
+
+.color::before {
+  content: '';
+  top: 0%;
+  left: 0%;
+  position: absolute;
+
+  width: 0%;
+  height: 110%;
+  background-color: #584D30;
+  z-index: -1;
+  transition: all .8s ease-in-out;
+}
+
+.color:hover::before {
+  width: 110%;
 }
 
 .btn:hover {
