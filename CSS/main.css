@@ -186,6 +186,17 @@ header {
   z-index: -99999 !important;
 }
 
+.bg-image::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(110deg, #0A0C10 5%, rgba(11, 12, 16, 0.56) 99%, #0A0C10 99%);
+
+}
+
 /*! Primeiro Container Banner*/
 
 .container {
@@ -358,14 +369,19 @@ header {
 
 /*! Mouse */
 
-.mouse {
+.mouse-content {
   width: 60px;
+  height: 42px;
+  cursor: pointer;
+}
+
+.mouse {
+  width: 100%;
   height: 42px;
   display: flex;
   align-self: flex-end;
-  justify-self: center;
-  cursor: pointer;
-  z-index: 99999999999999 !important;
+  justify-content: center;
+  position: absolute;
   animation: click-mouse 1.6s ease-in infinite;
 }
 
