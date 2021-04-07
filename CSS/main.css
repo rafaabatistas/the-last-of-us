@@ -217,7 +217,7 @@ header {
   background-position: center;
   display: flex;
   justify-content: center;
-  z-index: -99999 !important;
+  z-index: -10;
 }
 
 .bg-image::after {
@@ -446,7 +446,7 @@ header {
   position: absolute;
   display: flex;
   justify-content: flex-end;
-  z-index: -999 !important;
+  z-index: -5;
 } 
 
 .container-item-2 {
@@ -454,12 +454,10 @@ header {
   height: 100%;
   padding-top: 30px;
   padding-right: 50px;
-  z-index: -999 !important;
 }
 
 .ellie-image {
   height: 111%;
   background-size: cover;
   background-position: center;
-  z-index: -999 !important;
 }
