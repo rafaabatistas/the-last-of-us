@@ -4,11 +4,11 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box !important;
+  box-sizing: border-box !important;
 }
 
 :root {
-  --cor-principal: #584D30;
+  --cor-principal: #584d30;
   --box-shadow: #ffffff;
 }
 
@@ -21,7 +21,7 @@ p {
   font-size: 14px;
   color: white;
   letter-spacing: 1px;
-  line-height: .4rem;
+  line-height: 0.4rem;
 }
 
 .banner {
@@ -73,15 +73,15 @@ header {
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 8px 16px;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
   font-weight: 300;
   cursor: pointer;
   position: relative;
-  transition: all .5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 .nav-link::before {
-  content: '';
+  content: "";
   width: 80%;
   height: 3px;
   position: absolute;
@@ -93,7 +93,7 @@ header {
   right: 9px;
   opacity: 0;
 
-  transition: all .8s ease-in;
+  transition: all 0.8s ease-in;
 }
 
 .nav-link:hover::before {
@@ -117,11 +117,10 @@ header {
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 8px 16px;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
   cursor: pointer;
   position: relative;
 }
-
 
 /*! Mídias Sociais */
 
@@ -140,7 +139,7 @@ header {
 }
 
 .midia-social {
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 .midia-social:hover {
@@ -157,7 +156,7 @@ header {
 .facebook {
   fill: #959698;
   cursor: pointer;
-  transition: all .2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .facebook:hover {
@@ -170,7 +169,7 @@ header {
 .instagram {
   fill: #959698;
   cursor: pointer;
-  transition: all .2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .instagram:hover {
@@ -183,7 +182,7 @@ header {
 .twitter {
   fill: #959698;
   cursor: pointer;
-  transition: all .2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .twitter:hover {
@@ -196,7 +195,7 @@ header {
 .youtube {
   fill: #959698;
   cursor: pointer;
-  transition: all .2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .youtube:hover {
@@ -224,14 +223,18 @@ header {
 }
 
 .bg-video::after {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(110deg, #0A0C10 5%, rgba(11, 12, 16, 0.56) 80%, #0A0C10 99%);
-
+  background: linear-gradient(
+    110deg,
+    #0a0c10 5%,
+    rgba(11, 12, 16, 0.56) 80%,
+    #0a0c10 99%
+  );
 }
 
 /*! Primeiro Container Banner*/
@@ -269,14 +272,13 @@ header {
 .mini-descricao {
   height: auto;
   font-size: 15px;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
   font-weight: 300;
   letter-spacing: 2px;
   line-height: 18px;
   text-align: justify;
   text-indent: 1rem;
 }
-
 
 /*! Botões */
 
@@ -302,12 +304,12 @@ header {
   border-style: none;
   transform: skewX(-10deg);
 
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
   font-weight: 300;
   font-size: 16px;
   color: white;
 
-  transition: all .8s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 
 .primary {
@@ -315,7 +317,7 @@ header {
 }
 
 .primary::after {
-  content: '';
+  content: "";
   width: 35px;
   height: 30px;
   position: absolute;
@@ -329,7 +331,7 @@ header {
   border-left: 3px solid white;
   border-radius: 4px;
 
-  transition: all .8s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 
 .primary:hover::after {
@@ -337,7 +339,7 @@ header {
 }
 
 .primary::before {
-  content: '';
+  content: "";
   width: 35px;
   height: 30px;
   position: absolute;
@@ -351,7 +353,7 @@ header {
   border-right: 3px solid white;
   border-radius: 4px;
 
-  transition: all .8s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 
 .primary:hover::before {
@@ -366,7 +368,7 @@ header {
 }
 
 .color::before {
-  content: '';
+  content: "";
   top: 0%;
   left: 0%;
   position: absolute;
@@ -375,7 +377,7 @@ header {
   height: 110%;
   background-color: var(--cor-principal);
   z-index: -1;
-  transition: all .8s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 
 .color:hover::before {
@@ -383,7 +385,7 @@ header {
 }
 
 .btn:hover {
-  transform: scale(1.10) skewX(-10deg);
+  transform: scale(1.1) skewX(-10deg);
   text-shadow: 1px 1px 2px white;
 }
 
@@ -432,7 +434,8 @@ header {
   to {
     opacity: 1;
     margin-bottom: 0px;
-  } from {
+  }
+  from {
     opacity: 0;
     margin-bottom: 30px;
   }
@@ -450,7 +453,7 @@ header {
   display: flex;
   justify-content: flex-end;
   z-index: -5;
-} 
+}
 
 .container-item-2 {
   overflow: hidden;
